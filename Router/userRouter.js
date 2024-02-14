@@ -14,7 +14,7 @@ router.route("/user/:id")
 .delete(tryCatch(user.deleteUser))
 
 router.route("/user/email")
-.get(tryCatch(user.userByEmailId))
+.get(tryCatch(user.getUserByEmailId))
 
 
 
