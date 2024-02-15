@@ -3,17 +3,17 @@
 const mongoose=require("mongoose")
 const userSchema=new mongoose.Schema({
     name:{
-        type:"string",
+        type:String,
         required:"true"
     },
     age:{                                                                               
-        type:"number",
+        type:Number,
         required:"true"
     },
     email:{
-        type:"string",
-        required:"true",
-        unique:"true"
+        type:String,
+        required:"true"
+        
     }
 })
 const User=mongoose.model("User",userSchema)

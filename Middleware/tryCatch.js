@@ -1,9 +1,10 @@
     const tryCatchMiddleware=(handler)=>{
         return async(req,res,next)=>{
-
+// console.log(res)
         
         try{
             await handler(req,res,next)
+            
         }
         catch(error){
             console.log(error)
